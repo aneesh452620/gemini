@@ -1,0 +1,72 @@
+@mixin flexcenter ($justifycontent) {
+    display: flex;
+    align-items: center;
+    justify-content: $justifycontent;
+}
+
+@mixin border ($r) {
+    border-radius: $r;
+    -webkit-border-radius: $r;
+    -moz-border-radius: $r;
+    -ms-border-radius: $r;
+    -o-border-radius: $r;
+}
+
+@mixin transition {
+    transition: all 0.4s ease-in-out;
+}
+
+@mixin socialiocns {
+    display: flex;
+    justify-content: center;
+    li {
+        padding: 0px 5px;
+        list-style: none;
+        font-size: 20px;
+        a {
+            color: $para;
+            &:hover {
+                color: $primery;
+            }
+        }
+        &:first-child {
+            padding-left: 0px;
+        }
+    }
+}
+
+@mixin block-list {
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+       
+        li {
+         
+            list-style: none;
+            position: relative;
+           line-height: 30px;
+            color: $black;
+            color: $dark-gray;
+            a{
+                padding: 0px 10px;
+                color: $dark-gray;
+            }
+        
+        }
+    }
+}
+
+@mixin paraghraph {
+    @include transition;
+    text-align: left;
+    color: $para;
+    display: -webkit-box;
+    height: 45px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+

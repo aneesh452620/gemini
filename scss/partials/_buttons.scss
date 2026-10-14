@@ -1,0 +1,161 @@
+.btn-1 {
+    @include transition;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: $black;
+    color: $white;
+    cursor: pointer;
+    font-weight: 400;
+    border: 2px solid $black;
+    font-family: $rubik;
+    &:hover {
+        background: $lite-green;
+        border: 2px solid $lite-green;
+    }
+}
+
+.btn-2 {
+    @include transition;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: none;
+    color: $primery;
+    border: 3px solid $primery;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: $rubik;
+    &:hover {
+        background: $primery;
+        color: $white;
+    }
+}
+
+.btn-3 {
+    @include transition;
+    text-decoration: none;
+    padding: 10px 0px;
+    background: none;
+    color: $primery;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 400;
+    i {
+        color: $lite-green;
+        @include transition;
+    }
+    &:hover {
+        color: $violet;
+        i {
+            padding-left: 10px;
+        }
+    }
+}
+
+.btn-4 {
+    @include transition;
+    text-decoration: none;
+    padding: 10px 0px;
+    background: none;
+    color: $secondary;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: left;
+    i {
+        opacity: 0;
+        @include transition;
+        color: $secondary;
+    }
+    &:hover {
+        color: $violet;
+        i {
+            opacity: 1;
+            padding-left: 5px;
+        }
+    }
+}
+
+.btn-5 {
+    @include transition;
+    @include border(20px);
+    text-decoration: none;
+    padding: 5px 15px;
+    background: $primery;
+    color: $white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: left;
+    margin-right: 10px;
+    i {
+        @include transition;
+    }
+    &:hover {
+        background: $violet !important;
+        i {
+            padding-left: 5px;
+        }
+    }
+}
+
+.btn-6 {
+    appearance: button;
+    background-color: $primery;
+    background-image: none;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, $secondary 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 15px 5px 10px 0;
+    overflow: visible;
+    padding: 12px 20px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    &:focus {
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {
+        box-shadow: rgba(208, 32, 32, 0.125) 0 3px 5px inset;
+        outline: 0;
+    }
+    &:not([disabled]):active {
+        box-shadow: #fff 2px 2px 0 0, $secondary 2px 2px 0 1px;
+        transform: translate(2px, 2px);
+    }
+    @media (min-width: 768px) {
+        .button-50 {
+            padding: 12px 50px;
+        }
+    }
+}
+
+.arrow {
+    @include transition;
+    @include border(50%);
+    background: $violet;
+    width: 50px;
+    height: 50px;
+    color: $white;
+    font-size: 1.5rem;
+    border: none;
+    &:hover {
+        background: $secondary;
+        transform: translateX(5px);
+    }
+}
